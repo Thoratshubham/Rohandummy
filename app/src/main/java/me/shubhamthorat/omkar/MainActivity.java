@@ -2,7 +2,9 @@ package me.shubhamthorat.omkar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
@@ -34,5 +36,11 @@ public class MainActivity extends AppCompatActivity {
 
         v_flipper.setInAnimation(this,android.R.anim.slide_in_left);
         v_flipper.setInAnimation(this,android.R.anim.slide_out_right);
+    }
+
+    public void intent (View view){
+
+        Intent intent = new Intent(MainActivity.this , Moreinfo.class);
+        startActivity(intent);
     }
 }
